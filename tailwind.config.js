@@ -1,12 +1,39 @@
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./styles/globals.css",
+    "./libs/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#4F8AFF', // Soft blue
+          light: '#6B9EFF',
+          dark: '#3A75E0',
+        },
+        secondary: {
+          DEFAULT: '#2D3748', // Dark gray blue
+          light: '#4A5568',
+          dark: '#1A202C',
+        },
+        background: {
+          light: '#FFFFFF',
+          DEFAULT: '#F8FAFF', // Very light blue
+          dark: '#EFF4FF',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
+      },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          '2xl': '1400px',
+        },
+      },
       backgroundImage: {
         gradient:
           "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
